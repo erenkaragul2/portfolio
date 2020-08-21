@@ -271,6 +271,24 @@ footer {
   justify-content: center;
   
 }
+.prct1 {
+  width: 90%;
+  margin-left: 5%;
+}
+.prct11 {
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+.projectslink {
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0.5fr;
+  text-align: center;
+}
 
 
 @media (max-width: 500px) {
