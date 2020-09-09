@@ -36,13 +36,12 @@ a {
   grid-column: 3/4;
 }
 .hero {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 3fr 2fr 1fr;
-  width: 90%;
-  
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 20%;
 }
-p , h1 ,h3 , a{
+p , h1 ,h3 , h2 , a{
   /*border: green 1px solid;*/
   font-family: 'Montserrat' , 'Poppins', sans-serif;
 }
@@ -77,13 +76,6 @@ p , h1 ,h3 , a{
   text-align: center;
   width: 80%;
 }
-#parag1 {
-  align-self: start;
-  justify-self: center;
-  width: 400px;
-  margin-top: -75px;
-  opacity: 0.75;
-}
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -100,6 +92,7 @@ i:hover {
 }
 h1 {
   color: black;
+  font-size: 3rem;
 }
 
 
@@ -114,13 +107,13 @@ h1 {
   
     font: bold 1.5em 'Montserrat';
     text-decoration: none;
-    background-color: black;
+    background-color: #6BE6B0;
     color: white;
     padding: 8px 24px 8px 24px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
+    border-top: 1px solid #6BE6B0;
+    border-right: 1px solid #6BE6B0;
+    border-bottom: 1px solid #6BE6B0;
+    border-left: 1px solid #6BE6B0;
     border-radius: 20px;
 }
 body {
@@ -147,13 +140,13 @@ body {
 .btn2 {
   font: bold 1.5em 'Montserrat';
     text-decoration: none;
-    background-color: black;
+    background-color: #6BE6B0;
     color: white;
     padding: 8px 24px 8px 24px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+    border-top: 1px solid #6BE6B0;
+    border-right: 1px solid #6BE6B0;
+    border-bottom: 1px solid #6BE6B0;
+    border-left: 1px solid #6BE6B0;
     border-radius: 20px;
     
 }
@@ -161,6 +154,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-gap: 2em;
+  margin-top: 20px;
 }
 .btn3 {
   font: bold 1.5em 'Montserrat';
@@ -176,29 +170,26 @@ body {
 }
 .wrapper3 {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr  ;
   grid-gap: 2em;
-  grid-template-rows: 3fr 1fr;
+  grid-template-rows: 1fr;
   padding-left: 7%;
   padding-right: 7%;
+  margin-top: 100px;
 }
 .projects {
   align-self: start;
   justify-self: center;
   /*border: 3px solid green;*/
 }
-.headeralt {
-  text-align: center;
-  /*border: 3px solid green;*/
-  width: auto;
-  padding: 2em;
-}
 .projectsimg {
   align-self: center;
   justify-self: center;
   /*border: 3px solid green;*/
-  
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
+
 .pimg {
   width: 100%;
 }
@@ -259,7 +250,7 @@ footer {
 #fabs {
   color: white;
   padding: 1rem;
-  font-size: 25px;
+  font-size: 3rem;
 }
 .footersocial {
   display: flex;
@@ -286,7 +277,62 @@ img {
   grid-column-gap: 0.5fr;
   text-align: center;
 }
-
+.untitled {
+  width: 80%;
+}
+.sides {
+  width: 100%;
+  background-color: #FBF8F3;
+  margin-bottom: 50px;
+}
+.testemonials {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  background-color: #FBF8F3;
+}
+.leftside {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+}
+.rightside {
+  width: 45%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.comment {
+  padding-top: 10px;
+}
+.circle {
+  background-color: tomato;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+h2 {
+  font-size: 2rem;
+}
+.mc_embed_signup {
+  background-color: black !important;
+}
+.mcforms {
+  background-color: black;
+  width: 100%;
+}
+#mc_embed_signup{background: black; clear:left; font:14px 'Montserrat' , 'Poppins', sans-serif; color: white; width: 50%; margin-left: 25%;}
 
 @media (max-width: 500px) {
   .hero {
@@ -322,13 +368,10 @@ img {
     margin-left: 25%;
   }
   .btn2 {
-    font: bold 0.75em 'Montserrat';
+    font: bold 1.25em 'Montserrat';
       
-      padding: 4px 12px 4px 12px;
-      border-top: 1px solid black;
-      border-right: 1px solid black;
-      border-bottom: 1px solid black;
-      border-left: 1px solid black;
+      padding: 6px 18px 6px 18px;
+     
       border-radius: 20px;
       justify-self: center;
       align-self: center;
@@ -343,10 +386,10 @@ img {
     
   }
   .btn3 {
-    font: bold 0.75em 'Montserrat';
+    font: bold 1.25em 'Montserrat';
       
     
-      padding: 4px 12px 4px 12px;
+      padding: 6px 18px 6px 18px;
       border-top: 1.5px solid black;
       border-right: 1.5px solid black;
       border-bottom: 1.5px solid black;
@@ -390,14 +433,15 @@ img {
     flex-direction: column;
     align-items: start;
     justify-items: start;
-    margin-left: 0;
+    margin-left: 5%;
     margin-bottom: 25px;
+    width: 90%;
+    padding: 0;
   }
   .projectsimg {
-    width: 80%;
+    width: 100%;
     margin-left: 0;
-    
-    
+    margin-bottom: 0;
   }
   .pimg{
     align-self: start;
@@ -564,12 +608,81 @@ img {
   #h1 {
     text-align: start;
   }
-  
+  .testemonials {
+    flex-direction: column;
+  }
+  .leftside {
+    width: 80%;
+  }
+  .rightside {
+    width: 80%;
+  }
+  .footer {
+    width: 100%;
+  }
 
 }
+@media (max-width: 475px) {
+  .btn2 {
+    font: bold 1em 'Montserrat';
+      
+      padding: 6px 18px 6px 18px;
+     
+      border-radius: 20px;
+      justify-self: center;
+      align-self: center;
+      
   
-
-
-
-
-
+      
+  }
+  .btn3 {
+    font: bold 1em 'Montserrat';
+      
+      padding: 6px 18px 6px 18px;
+     
+      border-radius: 20px;
+      justify-self: center;
+      align-self: center;
+      margin-left: 27.5px;
+      
+  }
+  .parag {
+    
+      width: 100%;
+      margin: 0;
+    
+  }
+  .wrapper2 {
+    width: 80%;
+    margin-left: 15%;
+  }
+  .aboutsectioncontent {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 475px) {
+  .wrapper2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .wrapper3 {
+    margin-top: 25px;
+  }
+  .testemonials {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 390px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .wrapper2 {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 300px) {
+  
+}
